@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piñatas Marife</title>
+    <link rel="stylesheet" href="css/styles-pinnatas.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="pinatas-marife-favicon.svg">
+</head>
+<body>
+    <header id="Inicio">
+        <h1>Piñatas Marife</h1>
+        <nav class="navegacion">
+            <a class="enlace" href="#inicio">Inicio</a>
+            <a class="enlace" href="#trabajos">Trabajos</a>
+            <a class="enlace" href="#contactos">Contacto</a>
+        </nav>
+
+        <div class="banner">
+            <button class="arrow left" onclick="prevImage()">&#9664</button>
+            <img id="bannerImage" src="img/pinnatas.jpg" alt="Piñatas">
+            <button class="arrow right" onclick="nextImage()">&#9654</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="favoritas" id="menu">
+            <h2>Nuestras Galería</h2>
+            <div class="gallery">
+                <div class="card">
+                    <img src="img/sullymini.jpg" alt="Sully" class="thumbnail" data-full="img/sully.jpg">
+                    <p>"Sulley" el monstruo azul y peludo.</p>
+                </div>
+                <div class="card">
+                    <img src="img/Mashamini.jpg" alt="Masha" class="thumbnail" data-full="img/Mashamini.jpg">
+                    <p>"Masha" cuidada por un oso.</p>
+                </div>
+                <div class="card">
+                    <img src="img/jarramini.jpg" alt="Jarra cerveza" class="thumbnail" data-full="img/Jarra.jpg">
+                </div>
+                <div class="card">
+                    <img src="img/sombreromini.jpg" alt="Gorro mágico" class="thumbnail" data-full="img/sombrero.jpg">
+                </div>
+            </div>
+
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    <img src="" alt="Imagen ampliada" class="modal-image">
+                </div>
+            </div>
+        </section>
+<br>
+        <h2>Elaboración de las Piñatas</h2>
+        <img src="img/Proceso/Car.jpg" alt="Car" id="pinnataCar" style="width: 200px;cursor: pointer;">
+        <div id="procedimiento">
+            <h3>Procedimiento de elaboración de la Piñata</h3>
+            <ul>
+                <li class="paso">1. Preparamos la base con cajas y cartones.
+                    <img src="img/Proceso/Paso-1.jpg" alt="Paso 1">
+                </li>
+                <li class="paso">2. Procedemos a forrarla con periódicos.
+                    <img src="img/Proceso/Paso-2.jpg" alt="Paso 2">
+                </li>
+                <li class="paso">3. Empezamos a forrar con papeles de colores.
+                    <img src="img/Proceso/Paso-3.jpg" alt="Paso 3">
+                </li>
+            </ul>
+        </div>
+<hr>
+
+    </main>
+<br>
+    <footer>
+        <p>&copy; Piñatas Marife. Todos los derechos reservados</p>
+        <div class="social-links">
+
+        </div>
+    </footer>
+    
+    <script src="js/js-pinnatas.js"></script>
+</body>
+</html>
