@@ -22,28 +22,27 @@ window.onclick = (event) => {
     }
 }
 
-let images = [
-    { id: 1, name: "Sol", price: 24.99, image: "../img/Sol.jpg"},
-    { id: 2, name: "Polar", price: 19.99, image: "../img/Polar.jpg"},
-    { id: 3, name: "PapaNoel", price: 29.99, image: "../img/PapaNoel.jpg"},
-];
-let currentIndex = 0;
+let currentImageIndex = 0;
+const images = document.querySelectorAll('.banner img');
+const intervalTime = 3000;
 
 function showImage(index) {
-    const bannerImage = document.getElementById("bannerImage");
-    bannerImage.src = images[index];
+    images.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+    })
 }
-
 function prevImage(){
-    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
-    showImage(currentIndex);
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    showImage(currentImageIndex);
 }
-
 function nextImage(){
-    currentIndex = (currentIndex < images.length -1) ? currentIndex + 1 : 0;
-    showImage(currentIndex);
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    showImage(currentImageIndex);
 }
-
+document.addEventListener('DOMContentLoaded', () => {
+    showImage(currentImageIndex);
+    setInterval(nextImage, intervalTime);
+});
 document.getElementById('pinnataCar').addEventListener('click',
     function() {
         var procedimiento =

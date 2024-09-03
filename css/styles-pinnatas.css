@@ -28,42 +28,59 @@ h1 {
 .banner {
     position: relative;
     width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 600px;
+    overflow: hidden;
+    justify-items: center;
 }
-
 .banner img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 50%;
+    display: none;
+    align-items: center;
+}
+.banner img.active {
+    display: block;
 }
 .arrow {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(74, 238, 45, 0.5);
-    padding: 10px;
-    border: #f817a9;
-    border-radius: 2px;
+    transform: translate(-50%);
     cursor: pointer;
-    z-index: 1;
+    font-size: 2rem;
+    color: #6ff35a;
+    background-color: #f817a9;
+    padding: 5px;
+    border-radius: 30%;
 }
-
-.left {
-    left: 10px;
+.arrow.left {
+    left: 5px;
 }
-
-.right {
-    right: 10px;
+.arrow.right {
+    right: 5px;
 }
-
+.historia {
+    background-color: #9ef1914b;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-small;
+    font-style: italic;
+    text-align: justify;
+    padding: 1rem;
+}
+.contenedor-servicios {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
 h2 {
     text-align: center;
     color: rgb(251, 59, 181);
 }
 
+.centrar-imagen {
+    padding: 0.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -73,16 +90,15 @@ body {
 
 .gallery {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: xx-small;  
+    margin: 0 auto; 
 }
 
 .gallery img {
-    margin: 5px;
+    margin: 3px;
 }
 
 .card {
@@ -116,12 +132,17 @@ body {
     background-color: rgba(216, 127, 251, 0.8);
 }
 .modal-content {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     height: 85%;
+    background-color: #6ff35a;
+    padding: 20px;
+    align-items: center;
 }
 .modal-image {
     max-width: 100%;
     max-height: 100%;
+    display: block
 }
 .close {
     color: #f1f1f1;
@@ -139,15 +160,53 @@ body {
     color: #f817a9;
     font-weight: bolder;
 }
-ol {
+
+ul {
     counter-reset: paso;
 }
 
 .paso img {
-    max-width: 75%;
+    max-width: 60%;
     display: inline-block;
     margin-top: 10px auto;
     padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+.formulario {
+    width: min(80rem o 100%);
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: var(--radio-borde);
+}
+.formulario legend {
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6ff35a;
+    font-weight: bold;
+}
+.container-input {
+    margin-bottom: 0.5rem;
+}
+.container-input label {
+    color: #f817a9;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-align: left;
+}
+.container-input input,
+.container-input textarea {
+    width: 95%;
+    padding: 0.5rem;
+}
+.enviar {
+    text-transform: uppercase;
+    color: #6ff35a;
+    width: 100%;
+    border: none;
+    font-weight: bolder;
+    margin-top: 0.5rem;
 }
 
 footer {

@@ -17,23 +17,56 @@
         </nav>
 
         <div class="banner">
-            <button class="arrow left" onclick="prevImage()">&#9664</button>
-            <img id="bannerImage" src="img/pinnatas.jpg" alt="Piñatas">
-            <button class="arrow right" onclick="nextImage()">&#9654</button>
+            <img src="img/Cartel1-1.jpg" alt="Cartel1" class="active">
+            <img src="img/Pignata.jpg" alt="Piñatas">
+            <div class="arrow left" onclick="prevImage()">&#10094;</div>
+            <div class="arrow right" onclick="nextImage()">&#10095;</div>
         </div>
     </header>
 
     <main>
+        <section id="trabajos">
+            <h2>Historia de las Piñatas</h2>
+            <div class="historia">   contenedor-servicios
+                <section class="contenedor-servicios">
+                <section class="section-servicios shadow-small">
+                    <h3>Origen</h3>
+                    <img class="iconos" src="img/flower.svg" alt="Icono de Diseño">
+                    <p>De acuerdo con Marco Polo, el origen de las piñatas se encuentra en las celebraciones de año nuevo en China y en su forma original representaban animales. De ahí, la tradición viajó a Italia donde adoptó el nombre de pignatas y fue desde donde se difundió al resto de Europa. A raíz de ello, llegó a España y como consecuencia a México (en ese momento Nueva España) en la época de la conquista, en donde los frailes la utilizaron como herramienta de evangelización. No obstante, existen indicios de que en Mesoamérica había tradiciones similares para celebrar al dios Huitzilopochtli: acostumbraban romper recipientes de barro rellenos de cacao y llenaban cazuelas de barro con tesoros y alhajas que decoraban con plumas y listones y las rompían durante las festividades.La forma actual de las piñatas surgió en el siglo XVI en el municipio de  Acolman de Nezahualcóyotl, Estado de México, cuando los frailes comenzaron a celebrar las “misas de aguinaldo” o “posadas” durante los días previos a la Navidad. Se usaba la piñata como alegoría para evangelizar a los pobladores de la región.</p>
+                </section>
+                
+                <section class="section-servicios shadow-small">
+                    <h3>Simbolismo</h3>
+                    <img class="iconos" src="img/robot.svg" alt="Icono de Aplicaciones">
+                    <ul><li>Los siete picos representan los pecados capitales: soberbia, avaricia, lujuria, ira, gula, envidia y pereza.</li>
+                    <li>Sus brillantes colores simbolizan la tentación.</li>
+                    <li>Láminas de oropel o latón: hacen referencia a los engaños del mundo.</li>
+                    <li>Venda en los ojos: nos recuerda que la fe es ciega.</li>
+                    <li>Palo con el que se rompe la piñata: es la fuerza y la virtud que destruyen los engaños y pecados.</li>                    
+                    <li>Dulces, fruta, cacahuates y juguetes: son las riquezas del reino de los cielos que se otorgan como premio a la fe y la perseverancia.</li>
+                    </ul>
+                </section>
+    
+                <section class="section-servicios shadow-small">
+                    <h3>Web Commerce</h3>
+                    <img class="iconos" src="img/shopping-bag.svg" alt="Icono comercial">
+                    <p>El comercio web se refiere a la compra y venta de bienes y servicios a través de
+                        internet.
+                        Puedes ordenar tu comercio de manera ágil. Ofrece funcionalidades como generar facturas
+                        electrónicas, controlar el stock automáticamente, llevar la cuenta corriente de tus 
+                        clientes y manejar distintas cajas.</p>
+                </section>
+                </section>
+            </section>
+
         <section class="favoritas" id="menu">
-            <h2>Nuestras Galería</h2>
+            <h2>Nuestra Galería</h2>
             <div class="gallery">
                 <div class="card">
                     <img src="img/sullymini.jpg" alt="Sully" class="thumbnail" data-full="img/sully.jpg">
-                    <p>"Sulley" el monstruo azul y peludo.</p>
                 </div>
                 <div class="card">
                     <img src="img/Mashamini.jpg" alt="Masha" class="thumbnail" data-full="img/Mashamini.jpg">
-                    <p>"Masha" cuidada por un oso.</p>
                 </div>
                 <div class="card">
                     <img src="img/jarramini.jpg" alt="Jarra cerveza" class="thumbnail" data-full="img/Jarra.jpg">
@@ -50,6 +83,15 @@
                 <div class="card">
                     <img src="img/Gambamini.jpg" alt="Gamba" class="thumbnail" data-full="img/Gamba.jpg">
                 </div>
+                <div class="card">
+                    <img src="img/bailarinamini.jpg" alt="Bailarina" class="thumbnail" data-full="bailarina.jpg">
+                </div>
+                <div class="card">
+                    <img src="img/casettemini.jpg" alt="Casette" class="thumbnail" data-full="casette.jpg">
+                </div>
+                <div class="card">
+                    <img src="img/duendemini.jpg" alt="Duende" class="thumbnail" data-full="Duende.jpg">
+                </div>
             </div>
 
             <div id="imageModal" class="modal">
@@ -61,22 +103,59 @@
         </section>
 <br>
         <h2>Elaboración de las Piñatas</h2>
-        <img src="img/Proceso/Car.jpg" alt="Car" id="pinnataCar" style="width: 200px;cursor: pointer;">
+        <img src="img/Proceso/Car.jpg" alt="Car" id="pinnataCar" class="centrar-imagen" style="width: 200px;cursor: pointer;">
         <div id="procedimiento">
             <h3>Procedimiento de elaboración de la Piñata</h3>
             <ul>
-                <li class="paso">1. Preparamos la base con cajas y cartones.
-                    <img src="img/Proceso/Paso-1.jpg" alt="Paso 1">
+                <li class="paso">1. Preparamos la estructura con cartones y papel de periódicos.
+                    <img src="img/Proceso/Paso1.jpg" alt="Paso 1"> </li>
+                <li class="paso">
+                    <img src="img/Proceso/Paso1-1.jpg" alt="Paso1-1">
                 </li>
                 <li class="paso">2. Procedemos a forrarla con periódicos.
-                    <img src="img/Proceso/Paso-2.jpg" alt="Paso 2">
+                    <img src="img/Proceso/Paso2.jpg" alt="Paso 2">
+                </li>
+                <li class="paso">
+                    <img src="img/Proceso/Paso2-2.jpg" alt="Paso2-2">
                 </li>
                 <li class="paso">3. Empezamos a forrar con papeles de colores.
-                    <img src="img/Proceso/Paso-3.jpg" alt="Paso 3">
+                    <img src="img/Proceso/Paso3.jpg" alt="Paso 3">
+                </li>
+                <li class="paso">
+                    <img src="img/Proceso/Paso3-3.jpg" alt="Paso3-3">
                 </li>
             </ul>
         </div>
 <hr>
+    <form class="formulario"> 
+        <fieldset>
+            <legend>Contacta con el siguiente formulario</legend>
+            <div class="inputs">
+                <div class="container-input">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                </div>
+    
+                 <div class="container-input">
+                    <label>Teléfono</label>
+                    <input type="tel" placeholder="Teléfono">
+                </div>                           
+
+                <div class="container-input">
+                    <label>email</label>
+                    <input type="email" placeholder="email">
+                </div>
+        
+                <div class="container-input">
+                    <label>Comentarios</label>
+                    <textarea></textarea>
+                </div>
+            </div>
+            
+            <input class="boton enviar" type="submit" value="enviar">      
+        </fieldset>
+    </form>
+
 
     </main>
 <br>
