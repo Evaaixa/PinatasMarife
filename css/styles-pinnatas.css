@@ -9,10 +9,9 @@
 h1 {
     text-align: center;
     color: rgb(244, 67, 235);
-    font-size: xx-large; 
+    font-size: xx-large;
     font-weight: bolder;
 }
-
 .navegacion {
     background-color: rgb(220, 106, 255);
     width: 100%;
@@ -24,16 +23,14 @@ h1 {
     padding: 0.5rem;
     border-radius: .25rem;
 }
-
 .banner {
     position: none;
     width: 100%;
     max-width: 300px;
-
-    
 }
 .banner img{
     width: 100%;
+    height: auto;
     display: none;
     margin: auto;
 }
@@ -189,18 +186,20 @@ body {
     top: 15px;
     cursor: pointer;
 }
+/* Pasos para las piñatas */
 #pinnataCar {
     border-radius: 15%;
     padding: 0.25rem;
     border: thick;
     border-style: outset;
     border-color: #6ff35a;
+    max-width: 50%;
 }
 #procedimiento {
     display: none;
     margin-bottom: 20px;
     text-align: center;
-    color: #79fa72;
+    color: blueviolet;
     font-weight: bolder;
 }
 ul {
@@ -234,7 +233,7 @@ ul {
     font-size: 1rem;
     text-align: center;
     text-transform: uppercase;
-    color: #6ff35a;
+    color: blueviolet;
     font-weight: bold;
 }
 .container-input {
@@ -255,7 +254,7 @@ ul {
 }
 .enviar {
     text-transform: uppercase;
-    color: #6ff35a;
+    color: blueviolet;
     width: 95%;
     font-weight: bolder;
     margin-top: 0.5rem;

@@ -17,8 +17,9 @@
         </nav>
 
         <div class="banner">
+            <div id="imagenes">
             <img src="img/Cartel1-1.jpg" alt="Cartel1" class="active">
-            <img src="img/Pignata.jpg" alt="Piñatas">
+            <img src="img/Pignata.jpg" alt="Piñatas"> </div>
             <div class="arrow left" onclick="prevImage()">&#10094;</div>
             <div class="arrow right" onclick="nextImage()">&#10095;</div>
         </div>
@@ -65,7 +66,7 @@
 
         <section class="favoritas" id="menu">
             <h2>Nuestra Galería</h2>
-            <div class="gallery">
+            <div class="gallery" id="gallery">
                 <div class="card">
                     <img src="img/sullymini.jpg" alt="Sully" class="thumbnail" data-full="img/sully.jpg">
                 </div>
@@ -104,11 +105,11 @@
                     <img src="" alt="Imagen ampliada" class="modal-image">
                 </div>
             </div>
-            <button id="loadMoreButton">Más imágenes</button>
+            <button onclick="addImagen">Más imágenes</button>
         </section>
 <br>
         <h2>Elaboración de las Piñatas</h2>
-        <img src="img/Proceso/Car.jpg" alt="Car" id="pinnataCar" class="centrar-imagen" style="width: 200px;cursor: pointer">
+        <img src="img/Proceso/Car.jpg" alt="Car" id="pinnataCar" class="centrar-imagen" style="width: 300px;cursor: pointer">
         <br>
         <div id="procedimiento">
             <h3>Procedimiento de elaboración de la Piñata</h3>
@@ -121,9 +122,21 @@
                 <li><img src="img/Proceso/Paso2.jpg">
                     <img src="img/Proceso/Paso2-2.jpg" alt="Paso2">
                 </li>
-                <li><p>3. Después que se seca bien, empieza el proceso de forrar con papeles de colores, según el diseño.</p></li>
+                <li><p>3. Una vez que se seca bien, empieza el proceso de forrar con papeles de colores, según el diseño.</p></li>
                 <li><img src="img/Proceso/Paso3.jpg">
-                    <img src="img/Proceso/Paso3-3.jpg" alt="Paso3">
+                    <img src="img/Proceso/Paso3-3.jpg" alt="Paso4">
+                </li>
+                <li><p>4. Se visualiza el diseño, y se agregan los detalles.</p></li>
+                <li><img src="img/Proceso/Paso4.jpg">
+                    <img src="img/Proceso/Paso4-4.jpg" alt="Paso3">
+                </li>
+                <li><p>5. Se montan todas las partes para darle la forma final a la piñata.</p></li>
+                <li><img src="img/Proceso/Paso5.jpg">
+                    <img src="img/Proceso/Paso6.jpg" alt="Paso5">
+                </li>
+                <li><p>6. Proceso terminado se visualiza la Piñata por todos los ángulos para observar los detalles.</p></li>
+                <li><img src="img/Proceso/Paso9.jpg">
+                    <img src="img/Proceso/Paso10.jpg" alt="Paso6">
                 </li>
             </ul>
         </div>
