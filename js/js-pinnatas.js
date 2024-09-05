@@ -22,26 +22,26 @@ window.onclick = (event) => {
     }
 }
 // Imágenes del banner
-let currentImageIndex = 0;
-const images = document.querySelectorAll('.banner img');
-const intervalTime = 3000;
-function showImage(index) {
-    images.forEach((img, i) => {
-        img.classList.toggle('active', i === index);
-    })
-}
-function prevImage(){
-    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-    showImage(currentImageIndex);
-}
-function nextImage(){
-    currentImageIndex = (currentImageIndex + 1) % images.length;
-    showImage(currentImageIndex);
-}
-document.addEventListener('DOMContentLoaded', () => {
-    showImage(currentImageIndex);
-    setInterval(nextImage, intervalTime);
-});
+// let currentImageIndex = 0;
+// const images = document.querySelectorAll('.banner img');
+// const intervalTime = 3000;
+// function showImage(index) {
+//     images.forEach((img, i) => {
+//         img.classList.toggle('active', i === index);
+//     })
+// }
+// function prevImage(){
+//     currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+//     showImage(currentImageIndex);
+// }
+// function nextImage(){
+//     currentImageIndex = (currentImageIndex + 1) % images.length;
+//     showImage(currentImageIndex);
+// }
+// document.addEventListener('DOMContentLoaded', () => {
+//     showImage(currentImageIndex);
+//     setInterval(nextImage, intervalTime);
+// });
 // Pasos elaboración piñatas
 document.getElementById('pinnataCar').addEventListener('click',
     function() {
@@ -54,4 +54,3 @@ document.getElementById('pinnataCar').addEventListener('click',
         }
     });
 // Fin visualización del procedimiento piñatas
-// Array para agregar más Piñatas a la galería y función
