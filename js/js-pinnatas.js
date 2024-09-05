@@ -41,7 +41,32 @@ window.onclick = (event) => {
 // document.addEventListener('DOMContentLoaded', () => {
 //     showImage(currentImageIndex);
 //     setInterval(nextImage, intervalTime);
-// });
+// })
+
+// Esta es para agregar una imagen desde una carpeta externa
+// document.getElementById('masPignatas').addEventListener('click',
+//     function() {
+//         var img = document.createElement('img');
+//         img.src = 'url/../img/';
+//         img.alt = 'Otras piñatas';
+//     document.getElementById('contenedorPignatas').appendChild(img);
+//     });
+
+document.getElementById('masPignatas').addEventListener('click', function() {
+    var pignatas = [
+        'ruta/a/tu/carpeta/imagen1.jpg',
+        'ruta/a/tu/carpeta/imagen2.jpg',
+        'ruta/a/tu/carpeta/imagen3.jpg'
+    ];
+    var contenedor = document.getElementById('contenedorPignatas');
+    pignatas.forEach(function(src) {
+        var img = document.createElement('img');
+        img.src = src;
+        img.alt = 'Descripción de la imagen';
+        contenedor.appendChild(img);
+    });
+});
+
 // Pasos elaboración piñatas
 document.getElementById('pinnataCar').addEventListener('click',
     function() {
