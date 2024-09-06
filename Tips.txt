@@ -214,3 +214,37 @@ Origen: Conversación con Copilot 27/8/2024
 .gallery-item:hover img {
     transform: scale(1.1);
 }
+
+BANNER
+.hero {
+    /* hace que ocupe todo el alto de pantalla */
+    height: 100vh;
+    background: url('../img/backgroun-image.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease;
+}
