@@ -61,8 +61,8 @@ document.getElementById('masPignatas').addEventListener('click', function() {
     var contenedor = document.getElementById('contenedorPignatas');
     pignatas.forEach(function(src) {
         var img = document.createElement('img');
-        img.src = src;
-        img.alt = 'Descripción de la imagen';
+        img.src = 'url/../img/polar.jpg';
+        img.alt = 'Polar';
         contenedor.appendChild(img);
     });
 });
