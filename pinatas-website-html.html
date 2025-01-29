@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piñatas MARIFE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header id="Inicio">
+        <h1>Piñatas MARIFE</h1>
+        <nav class="navegacion">
+            <a class="enlace" href="#inicio">Inicio</a>
+            <a class="enlace" href="Marife.pdf" target="_blank">Sobre mí</a>
+            <a class="enlace" href="#productos">Productos</a>
+            <a class="enlace" href="#contacto">Contacto</a>
+        </nav>
+
+        <div class="banner">
+            <img src="img/Baner/Baner-cartel1.png" alt="Cartel">
+            <div class="title title1">
+                <h3><em>"Enamórate de nuestras Piñatas"</em></h3>
+            </div>
+            <div class="title title2">
+                <h4>"Te hacemos el modelo que quieras"</h4>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/tupagina" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.twitter.com/tupagina" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/tupagina" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/tupagina" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Historia de las Piñatas</h2>
+            <div class="historia">  
+                <section class="contenedor-servicios">
+                    <div class="columnas">
+                        <h2>Origen</h2>
+                        <img class="iconos" src="img/histmini.png" alt="Icono de Historia">
+                        <p>El origen de las Piñatas de acuerdo con Marco Polo, se encuentra en China y en su forma original representaban animales, un ritual para recibir a la Primavera. De ahí, la tradición viajó a Italia donde adoptó el nombre de <strong>Pignatas</strong> y fue desde donde se difundió al resto de Europa.</p>
+                        <p>A raíz de ello, llegó a España y como consecuencia a México (Nueva España) en la época de la conquista, en donde los frailes la utilizaron como herramienta de evangelización.</p>
+                        <p>Existen indicios de que en Mesoamérica había tradiciones similares para celebrar al dios Huitzilopochtli: acostumbraban romper recipientes de barro rellenos de cacao y llenaban cazuelas de barro con tesoros y alhajas que decoraban y las rompían durante las festividades.</p>
+                    </div>
+
+                    <div class="columnas">
+                        <h2>Simbolismo</h2>
+                        <img class="iconos" src="img/Simbolmini.png" alt="Icono de Simbolismo">
+                        <div class="simbolismo-content">
+                            <p>Los siete picos representan los <strong>pecados capitales:</strong></p>
+                            <ol>
+                                <li><em>Soberbia:</em> Sentimientos de superioridad</li>
+                                <li><em>Avaricia:</em> Deseo obsesivo de riquezas</li>
+                                <li><em>Lujuria:</em> Anhelo morboso</li>
+                                <li><em>Ira:</em> Furia y violencia</li>
+                                <li><em>Gula:</em> Consumir en exceso</li>
+                                <li><em>Envidia:</em> Rabia por poseer menos</li>
+                                <li><em>Pereza:</em> La negligencia</li>
+                            </ol>
+                            <ul>
+                                <li>Sus <em>brillantes colores:</em> simbolizan la tentación</li>
+                                <li><em>Venda en los ojos:</em> recuerda que la fe es ciega</li>
+                                <li><em>Palo:</em> la fuerza que destruye los pecados</li>
+                                <li><em>Dulces y juguetes:</em> las riquezas del reino</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="columnas">
+                        <h2>Conclusión</h2>
+                        <img class="iconos" src="img/celebmini.jpg" alt="Icono conclusión">
+                        <p>Las piñatas han derribado todas las barreras y trascendido fronteras, se han convertido en una tradición querida en todo el mundo. Ya sea en fiestas infantiles, cumpleaños, eventos temáticos o celebraciones de cualquier tipo.</p>
+                        <p>Agregan un toque especial de emoción y alegría.</p>
+                        <p>Disfruta de la diversión y sumérgete en el mundo de las piñatas rompiendo y celebrando con una hermosa piñata llena de color y sorpresas.</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section class="favoritas" id="productos">
+            <h2>Nuestra Galería</h2>
+            <div class="gallery" id="gallery">
+                <div class="card">
+                    <img src="img/sullymini.jpg" alt="Sully" class="thumbnail" data-full="img/sully.jpg">
+                </div>
+                <div class="card">
+                    <img src="img/Mashamini.jpg" alt="Masha" class="thumbnail" data-full="img/Masha.jpg">
+                </div>
+                <!-- Repite para todas tus imágenes -->
+            </div>
+
+            <div id="imageModal" class="modal">
+                <span class="close">&times;</span>
+                <div class="modal-content">
+                    <img src="" alt="Imagen ampliada" class="modal-image">
+                </div>
+            </div>
+
+            <div id="contenedorPignatas" class="gallery"></div>
+            <button id="masPignatas">Más piñatas</button>
+        </section>
+
+        <h2>Elaboración de las Piñatas</h2>
+        <img src="img/Proceso/Car.jpg" alt="Car" id="pinnataCar" class="centrar-imagen">
+
+        <div id="procedimiento">
+            <h3>Procedimiento de elaboración de la Piñata</h3>
+            <ul class="pasos">
+                <li>
+                    <p>1. Preparamos la estructura con cartones, alambres y papel de periódicos.</p>
+                    <img src="img/Proceso/Paso1.jpg" alt="Paso 1-1">
+                    <img src="img/Proceso/Paso1-1.jpg" alt="Paso 1-2">
+                </li>
+                <!-- Repite para todos los pasos -->
+            </ul>
+        </div>
+
+        <form class="formulario">
+            <fieldset>
+                <section id="contacto">
+                    <legend>Contacta con el siguiente formulario</legend>
+                    <div class="inputs">
+                        <div class="container-input">
+                            <label>Nombre</label>
+                            <input type="text" placeholder="Nombre">
+                        </div>
+                        <div class="container-input">
+                            <label>Teléfono</label>
+                            <input type="tel" placeholder="Teléfono">
+                        </div>
+                        <div class="container-input">
+                            <label>Email</label>
+                            <input type="email" placeholder="email">
+                        </div>
+                        <div class="container-input">
+                            <label>Comentarios</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+                    <input class="boton enviar" type="submit" value="enviar">
+                </section>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Piñatas MARIFE. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
